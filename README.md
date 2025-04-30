@@ -24,7 +24,7 @@ Este projeto contribui diretamente com o **Objetivo de Desenvolvimento Sustentá
 | Nome         | RA           | Função         | GitHub            |
 |--------------|--------------|----------------|-------------------|
 | Alex         | —            | —              | —                 |
-| Amanda Lima  | 00000851755  | —              | -|
+| Amanda Lima  | 00000851755  | —              | -amandaklima      |
 | Eliel        | —            | —              | —                 |
 | Gustavo      | —            | —              | —                 |
 | Kelvison     | —            | —              | —                 |
@@ -36,7 +36,7 @@ Este projeto contribui diretamente com o **Objetivo de Desenvolvimento Sustentá
 
 - **Linguagem:** Python 
 - **Framework:** Django
-- **Banco de Dados:** 
+- **Banco de Dados:** MySql
 - **Organização:** Trello
 - **Versionamento:** Git + GitHub
 

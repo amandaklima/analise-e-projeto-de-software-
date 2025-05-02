@@ -28,7 +28,7 @@ Este projeto contribui diretamente com o **Objetivo de Desenvolvimento Sustentá
 | Eliel        | —            | —              | —                 |
 | Gustavo      | —            | —              | —                 |
 | Kelvison     | —            | —              | —                 |
-| Rhydrian     | —            | —              | —                 |
+| Rhydrian     | 00000851763  | —              | -rhydrian         |
 
 ---
 

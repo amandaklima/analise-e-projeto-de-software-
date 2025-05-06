@@ -23,12 +23,12 @@ Este projeto contribui diretamente com o **Objetivo de Desenvolvimento Sustentá
 
 | Nome         | RA           | Função         | GitHub            |
 |--------------|--------------|----------------|-------------------|
-| Alex         | 00000851753  | —             | -alexrhikelme     |
-| Amanda Lima  | 00000851755  | —             | -amandaklima      |
-| Eliel        |  00000851565           | —   | —eliel                 |
-| Gustavo      | 00000851759            | —   | —gustavo                 |
-| Kelvson     | 00000851762            | —    | —kelvson                 |
-| Rhydrian     | 00000851763  | —             | -rhydrian         |
+| Alex         | 00000851753  | —             | -alexrhikelme      |
+| Amanda Lima  | 00000851755  | —             | -amandaklima       |
+| Eliel        |  00000851565           | —   | —eliel             |
+| Gustavo      | 00000851759            | —   | —gustavo           |
+| Kelvson     | 00000851762            | —    | —kelvsonnilson     |
+| Rhydrian     | 00000851763  | —             | -rhydrian          |
 
 ---
 

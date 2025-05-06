@@ -23,7 +23,7 @@ Este projeto contribui diretamente com o **Objetivo de Desenvolvimento Sustentá
 
 | Nome         | RA           | Função         | GitHub            |
 |--------------|--------------|----------------|-------------------|
-| Alex         | —            | —              | —                 |
+| Alex         | 00000851753  | —              | -alexrhikelme     |
 | Amanda Lima  | 00000851755  | —              | -amandaklima      |
 | Eliel        | —            | —              | —                 |
 | Gustavo      | —            | —              | —                 |

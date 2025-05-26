@@ -1,0 +1,17 @@
+<h1>Criar Atividade</h1>
+<form method="post">{% csrf_token %}
+  Título: <input type="text" name="titulo" required><br>
+  Tipo:
+  <select name="tipo">
+    <option value="funcional">Funcional</option>
+    <option value="absoluto">Absoluto</option>
+  </select><br>
+  Nível:
+  <select name="nivel">
+    <option value="iniciante">Iniciante</option>
+    <option value="intermediario">Intermediário</option>
+    <option value="avancado">Avançado</option>
+  </select><br>
+  <button type="submit">Criar</button>
+</form>
+<a href="{% url 'lista_atividades' %}">Voltar</a>

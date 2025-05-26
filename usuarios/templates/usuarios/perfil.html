@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Perfil</title>
-    <style>
-        body { font-family: Arial; padding: 20px; }
-    </style>
-</head>
-<body>
-    <h2>Bem-vindo, {{ usuario.nome }}</h2>
-    <p>Email: {{ usuario.email }}</p>
-    <p>Tipo de Analfabetismo: {{ usuario.tipo_analfabetismo }}</p>
-    <p>Nível: {{ usuario.nivel }}</p>
-    <a href="{% url 'logout' %}">Sair</a>
-</body>
-</html>
+<h1>Perfil</h1>
+<p>Nome: {{ usuario.nome }}</p>
+<p>Email: {{ usuario.email }}</p>
+<p>Tipo: {{ usuario.get_tipo_analfabetismo_display }}</p>
+<p>Nível: {{ usuario.get_nivel_display }}</p>
+<a href="{% url 'logout' %}">Sair</a><br><br>
+<a href="{% url 'lista_atividades' %}">Atividades</a><br>
+<a href="{% url 'comunidade_lista' %}">Comunidade</a><br>
+<a href="{% url 'mensagens_lista' %}">Mensagens</a>

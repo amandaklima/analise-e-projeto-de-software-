@@ -1,0 +1,6 @@
+<h1>Responder: {{ atividade.titulo }}</h1>
+<form method="post">{% csrf_token %}
+  Resposta: <textarea name="resposta" required></textarea><br>
+  <button type="submit">Enviar</button>
+</form>
+<a href="{% url 'lista_atividades' %}">Voltar</a>

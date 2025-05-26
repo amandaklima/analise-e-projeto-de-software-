@@ -1,0 +1,12 @@
+<h1>Atividades disponíveis</h1>
+<a href="{% url 'criar_atividade' %}">Criar nova atividade</a>
+<ul>
+  {% for atividade in atividades %}
+    <li>
+      {{ atividade.titulo }} - <a href="{% url 'responder_atividade' atividade.id %}">Responder</a>
+    </li>
+  {% empty %}
+    <li>Nenhuma atividade disponível.</li>
+  {% endfor %}
+</ul>
+<a href="{% url 'perfil' %}">Voltar ao perfil</a>

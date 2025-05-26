@@ -1,0 +1,10 @@
+<h1>Comunidade - Posts</h1>
+<a href="{% url 'comunidade_criar' %}">Criar Post</a>
+<ul>
+  {% for post in posts %}
+    <li><strong>{{ post.titulo }}</strong> - {{ post.autor.nome }} em {{ post.criado_em }}</li>
+  {% empty %}
+    <li>Sem posts na comunidade.</li>
+  {% endfor %}
+</ul>
+<a href="{% url 'perfil' %}">Voltar ao perfil</a>

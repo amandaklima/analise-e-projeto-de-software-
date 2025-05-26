@@ -1,0 +1,15 @@
+<h1>Mensagens</h1>
+<a href="{% url 'enviar_mensagem' %}">Enviar Mensagem</a>
+<ul>
+  {% for msg in mensagens %}
+    <li>
+      <strong>De:</strong> {{ msg.remetente.nome }} <br>
+      <strong>Conteúdo:</strong> {{ msg.conteudo }} <br>
+      <strong>Enviado em:</strong> {{ msg.enviado_em }} <br>
+      <strong>Lida:</strong> {{ msg.lida }}
+    </li>
+  {% empty %}
+    <li>Você não tem mensagens.</li>
+  {% endfor %}
+</ul>
+<a href="{% url 'perfil' %}">Voltar ao perfil</a>

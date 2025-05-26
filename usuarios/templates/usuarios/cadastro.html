@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        input, select { margin-bottom: 10px; width: 100%; padding: 8px; }
+    </style>
+</head>
+<body>
+    <h2>Cadastro</h2>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="nome" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="senha" placeholder="Senha" required>
+        <select name="tipo" required>
+            <option value="">Tipo de Analfabetismo</option>
+            <option value="funcional">Funcional</option>
+            <option value="absoluto">Absoluto</option>
+        </select>
+        <select name="nivel" required>
+            <option value="">Nível</option>
+            <option value="iniciante">Iniciante</option>
+            <option value="intermediario">Intermediário</option>
+            <option value="avancado">Avançado</option>
+        </select>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>

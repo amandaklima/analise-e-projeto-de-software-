@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+    </style>
+</head>
+<body>
+    <h2>Bem-vindo, {{ usuario.nome }}</h2>
+    <p>Email: {{ usuario.email }}</p>
+    <p>Tipo de Analfabetismo: {{ usuario.tipo_analfabetismo }}</p>
+    <p>Nível: {{ usuario.nivel }}</p>
+    <a href="{% url 'logout' %}">Sair</a>
+</body>
+</html>

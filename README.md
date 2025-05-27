@@ -40,7 +40,16 @@ Este projeto contribui diretamente com o **Objetivo de Desenvolvimento Sustentá
 - **Organização:** Trello
 - **Versionamento:** Git + GitHub
 
+## Passo a Passo para execução 
+- Instalar o Python e o Django
 
+- Clonar o Repositório ( git clone https://github.com/amandaklima/analise-e-projeto-de-software-/blob/main/README.md )
+
+- Ativa o ambiente virtual ( venv\Scripts\activate )
+
+-Rodar o servidor Django ( python manage.py runserver )
+
+- Visualizar o projeto na URL http://127.0.0.1:8000/usuarios/cadastro
 
 ## Organização do Projeto
 

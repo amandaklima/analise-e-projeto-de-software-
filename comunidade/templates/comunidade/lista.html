@@ -1,10 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Posts da Comunidade</title>
+  <style>
+    body {
+      background-color: #fff8f0;
+      font-family: Arial, sans-serif;
+      color: #4a2f27;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      color: #b0413e;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #d99d00;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+    }
+
+    li {
+      margin: 0.8rem 0;
+      font-size: 1.1rem;
+      padding: 0.8rem;
+      border-bottom: 1px solid #e4cbb4;
+    }
+
+    a.voltar {
+      display: inline-block;
+      margin-top: 2rem;
+      text-decoration: none;
+      color: #b0413e;
+    }
+  </style>
+</head>
+<body>
+
 <h1>Comunidade - Posts</h1>
-<a href="{% url 'comunidade_criar' %}">Criar Post</a>
+<a href="{% url 'comunidade_criar' %}" class="btn">Criar Post</a>
+
 <ul>
   {% for post in posts %}
-    <li><strong>{{ post.titulo }}</strong> - {{ post.autor.nome }} em {{ post.criado_em }}</li>
+    <li>
+      <strong>{{ post.titulo }}</strong><br>
+      <span>{{ post.autor.nome }} em {{ post.criado_em }}</span>
+    </li>
   {% empty %}
     <li>Sem posts na comunidade.</li>
   {% endfor %}
 </ul>
-<a href="{% url 'perfil' %}">Voltar ao perfil</a>
+
+<a href="{% url 'perfil' %}" class="voltar">← Voltar ao perfil</a>
+
+</body>
+</html>

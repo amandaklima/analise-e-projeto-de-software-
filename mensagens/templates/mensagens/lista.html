@@ -1,15 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Mensagens</title>
+  <style>
+    body {
+      background-color: #fff8f0;
+      font-family: Arial, sans-serif;
+      color: #4a2f27;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      color: #b0413e;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      background-color: #d99d00;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #f9e8d9;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      margin: 1rem auto;
+      max-width: 600px;
+      text-align: left;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    li strong {
+      color: #b0413e;
+    }
+
+    .voltar {
+      display: inline-block;
+      margin-top: 2rem;
+      text-decoration: none;
+      color: #b0413e;
+    }
+  </style>
+</head>
+<body>
+
 <h1>Mensagens</h1>
-<a href="{% url 'enviar_mensagem' %}">Enviar Mensagem</a>
+<a href="{% url 'enviar_mensagem' %}" class="btn">Enviar Mensagem</a>
+
 <ul>
   {% for msg in mensagens %}
     <li>
-      <strong>De:</strong> {{ msg.remetente.nome }} <br>
-      <strong>Conteúdo:</strong> {{ msg.conteudo }} <br>
-      <strong>Enviado em:</strong> {{ msg.enviado_em }} <br>
+      <strong>De:</strong> {{ msg.remetente.nome }}<br>
+      <strong>Conteúdo:</strong> {{ msg.conteudo }}<br>
+      <strong>Enviado em:</strong> {{ msg.enviado_em }}<br>
       <strong>Lida:</strong> {{ msg.lida }}
     </li>
   {% empty %}
     <li>Você não tem mensagens.</li>
   {% endfor %}
 </ul>
-<a href="{% url 'perfil' %}">Voltar ao perfil</a>
+
+<a href="{% url 'perfil' %}" class="voltar">← Voltar ao perfil</a>
+
+</body>
+</html>

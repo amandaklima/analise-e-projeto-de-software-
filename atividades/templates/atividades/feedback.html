@@ -1,4 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback</title>
+  <style>
+    body {
+      background-color: #fff8f0;
+      font-family: Arial, sans-serif;
+      color: #4a2f27;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      color: #b0413e;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 1.5rem;
+      color: #b0413e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
 <h1>Feedback da Resposta</h1>
-<p>Resposta: {{ resposta.resposta_texto }}</p>
-<p>Acertou? {{ resposta.acerto }}</p>
-<a href="{% url 'lista_atividades' %}">Voltar para atividades</a>
+<p><strong>Resposta:</strong> {{ resposta.resposta_texto }}</p>
+<p><strong>Acertou?</strong> {{ resposta.acerto }}</p>
+<a href="{% url 'lista_atividades' %}">← Voltar para atividades</a>
+
+</body>
+</html>

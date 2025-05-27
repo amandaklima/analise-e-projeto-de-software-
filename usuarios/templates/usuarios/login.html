@@ -1,10 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      background-color: #fff8f0;
+      font-family: Arial, sans-serif;
+      color: #4a2f27;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      color: #b0413e;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      background-color: #f9e8d9;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      text-align: left;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.6rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-top: 0.3rem;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      background-color: #d99d00;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .voltar {
+      margin-top: 1.5rem;
+      text-decoration: none;
+      color: #b0413e;
+    }
+
+    .erro {
+      color: red;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
 <h1>Login</h1>
+
 <form method="post">{% csrf_token %}
-  Email: <input type="email" name="email" required><br>
-  Senha: <input type="password" name="senha" required><br>
+  <label>Email:</label>
+  <input type="email" name="email" required>
+
+  <label>Senha:</label>
+  <input type="password" name="senha" required>
+
   <button type="submit">Entrar</button>
 </form>
-<a href="{% url 'cadastro' %}">Cadastrar-se</a>
+
+<a href="{% url 'cadastro' %}" class="voltar">Cadastrar-se</a>
+
 {% for message in messages %}
-  <p style="color:red;">{{ message }}</p>
+  <p class="erro">{{ message }}</p>
 {% endfor %}
+
+</body>
+</html>

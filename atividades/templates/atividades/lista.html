@@ -1,12 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividades</title>
+  <style>
+    body {
+      background-color: #fff8f0;
+      font-family: Arial, sans-serif;
+      color: #4a2f27;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      color: #b0413e;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+    }
+
+    li {
+      margin: 0.7rem 0;
+      font-size: 1.1rem;
+    }
+
+    a {
+      color: #b0413e;
+      text-decoration: none;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #d99d00;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
 <h1>Atividades disponíveis</h1>
-<a href="{% url 'criar_atividade' %}">Criar nova atividade</a>
+<a href="{% url 'criar_atividade' %}" class="btn">Criar nova atividade</a>
 <ul>
   {% for atividade in atividades %}
     <li>
-      {{ atividade.titulo }} - <a href="{% url 'responder_atividade' atividade.id %}">Responder</a>
+      {{ atividade.titulo }} – <a href="{% url 'responder_atividade' atividade.id %}">Responder</a>
     </li>
   {% empty %}
     <li>Nenhuma atividade disponível.</li>
   {% endfor %}
 </ul>
-<a href="{% url 'perfil' %}">Voltar ao perfil</a>
+<a href="{% url 'perfil' %}">← Voltar ao perfil</a>
+
+</body>
+</html>

@@ -55,6 +55,7 @@ Este projeto contribui diretamente com o **Objetivo de Desenvolvimento Sustentá
 
 - 🔗 [Trello da Equipe](https://trello.com/invite/b/DyB3tqD1/ATTIe6dfb77bfcb7ed78692998c98f4fbfac4A42EFF9/an-lise-e-projeto-de-software)
 
+- 🔗 [Protótipo] https://www.figma.com/design/cbGc1qXwvnGZEJ1IGfYuCO/APS?node-id=0-1&t=IB0yfd4IklHxE27Z-1
 
 ---
 
